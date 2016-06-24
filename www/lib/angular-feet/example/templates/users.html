@@ -1,0 +1,30 @@
+<!--<a href="" ng-click="createAll()">Create All</a>
+<a href="" ng-click="archiveAll()">Archive All</a>-->
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>UserId</th>
+            <th>Hiring Date</th>
+            <th>Display name</th>
+            <th>Role</th>
+            <th>Discipline</th>
+            <th>Location</th>
+            <th>Mobile Phone</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="user in users">
+            <td>{{user.id}}</td>
+            <td>{{user.hire_date}}</td>
+            <td><a href='' ng-click="selectUser(user)">{{user.display_name}}</a></td>
+            <td>{{user.role}}</td>
+            <td>{{user.discipline}}</td>
+            <td>{{user.location}}</td>
+            <td>{{user.mobile_phone}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
